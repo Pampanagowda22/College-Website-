@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your College Name</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em;
+        }
+
+        nav {
+            background-color: #444;
+            overflow: hidden;
+        }
+
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .content {
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em;
+            position: scroling fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Vaikunth Mehta National Institute of Cooperative Management</h1>
+        <img src="C:\Users\pgoud\OneDrive\Desktop\College Website\Photos\Vamnicom Round.png" alt="College Logo">
+    </header>
+
+    <nav>
+        <a href="C:\Users\pgoud\OneDrive\Desktop\College Website\College.html">Home</a>
+        <a href="C:\Users\pgoud\OneDrive\Desktop\College Website\academic.html">Academics</a>
+        <a href=""C:\Users\pgoud\OneDrive\Desktop\College Website\Admission.html">Admission</a>
+        <a href="C:\Users\pgoud\OneDrive\Desktop\College Website\Gallery.html">Gallery</a>
+    </nav>
+
+<link rel="stylesheet" href="C:\Users\pgoud\OneDrive\Desktop\College Website\Admission.css">
+    <div class="content admission-form">
+        <h2>Admission Form</h2>
+        <form action="process_admission.php" method="post">
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="fullname" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+
+            <label for="course">Select Course:</label>
+            <select id="course" name="course" required>
+                <option value="bachelors">Bachelor's Degree</option>
+                <option value="masters">Master's Degree</option>
+            </select>
+
+            <label for="message">Additional Information:</label>
+            <textarea id="message" name="message" rows="4"></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Vaikunth Mehta National Institute of Cooperative Management</p>
+    </footer>
+
+</body>
+
+</html>
